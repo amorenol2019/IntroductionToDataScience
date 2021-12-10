@@ -214,15 +214,14 @@ error.append(1 - acc_rad*100)
 
 #------PLOT OF SENSITIVITY
 plt.bar(methods, sensitivities)
-plt.errorbar(methods, sensitivities, xerr=error)
+#plt.errorbar(methods, sensitivities, xerr=error)
 plt.ylabel('Sensitivity %')
 plt.title('HRV')
 plt.show()
 
 #------PLOT OF SPECIFICITY
 plt.bar(methods, specificities)
-plt.errorbar(methods, specificities, xerr=error) 
+#plt.errorbar(methods, specificities, xerr=error) 
 plt.ylabel('Specificity %')
 plt.title('HRV')
 plt.show()
-
